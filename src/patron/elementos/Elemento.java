@@ -6,11 +6,11 @@ import java.util.ArrayList;
  *
  * @author César
  */
-public abstract class ElementoTAD implements TAD {
+public abstract class Elemento implements ElementoI {
 
     ArrayList<Integer> arrayList;
 
-    public ElementoTAD() {
+    public Elemento() {
         arrayList = new ArrayList<>();
     }
 
@@ -21,7 +21,7 @@ public abstract class ElementoTAD implements TAD {
 
     @Override
     public void sacar() {
-        
+        // Se debe sobreescribir en cada una de las clases
     }
 
     @Override

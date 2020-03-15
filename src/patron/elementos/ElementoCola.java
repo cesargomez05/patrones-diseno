@@ -1,18 +1,16 @@
 package patron.elementos;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author César Augusto Gómez.
  */
-public class Pila extends ElementoTAD {
+public class ElementoCola extends Elemento {
 
     @Override
     public void sacar() {
         int longitud = obtenerLongitud();
-        if (!estaVacia()) {
-            arrayList.remove(longitud - 1);
+        if (longitud > 0) {
+            arrayList.remove(0);
         }
     }
 }

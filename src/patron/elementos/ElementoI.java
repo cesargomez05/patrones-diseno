@@ -4,7 +4,7 @@ package patron.elementos;
  *
  * @author César Augusto Gómez.
  */
-public interface TAD {
+public interface ElementoI {
 
     /**
      * Método para insertar un elemento en el tipo de abstracción de dato.
