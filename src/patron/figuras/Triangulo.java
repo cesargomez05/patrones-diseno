@@ -8,12 +8,16 @@ public class Triangulo implements Figura {
 
     private int longitud;
 
-    public Triangulo(int longitud) {
-        this.setLongitud(longitud);
+    public Triangulo() {
     }
 
     public void setLongitud(int longitud) {
         this.longitud = longitud;
+    }
+
+    @Override
+    public void solicitarInformacion() {
+
     }
 
     @Override
