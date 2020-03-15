@@ -8,8 +8,7 @@ public class ElementoCola extends Elemento {
 
     @Override
     public void sacar() {
-        int longitud = obtenerLongitud();
-        if (longitud > 0) {
+        if (!estaVacia()) {
             arrayList.remove(0);
         }
     }

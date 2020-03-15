@@ -8,8 +8,8 @@ public class ElementoPila extends Elemento {
 
     @Override
     public void sacar() {
-        int longitud = obtenerLongitud();
         if (!estaVacia()) {
+            int longitud = arrayList.size();
             arrayList.remove(longitud - 1);
         }
     }

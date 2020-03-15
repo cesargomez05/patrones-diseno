@@ -22,11 +22,7 @@ public abstract class Elemento {
         // Se debe sobreescribir en cada una de las clases
     }
 
-    public int obtenerLongitud() {
-        return arrayList.size();
-    }
-
     public boolean estaVacia() {
-        return obtenerLongitud() > 0;
+        return arrayList.isEmpty();
     }
 }
