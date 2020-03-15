@@ -1,7 +1,7 @@
 package patron.elementos;
 
 /**
- * 
+ *
  * @author César Augusto Gómez.
  */
 public interface ElementoTAD {

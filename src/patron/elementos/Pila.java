@@ -3,7 +3,6 @@ package patron.elementos;
 import java.util.ArrayList;
 
 /**
- * Clase Pila.
  *
  * @author César Augusto Gómez.
  */

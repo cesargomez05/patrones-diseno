@@ -3,7 +3,7 @@ package patron.elementos;
 import java.util.ArrayList;
 
 /**
- * Clase Cola.
+ *
  * @author César Augusto Gómez.
  */
 public class Cola implements ElementoTAD {
