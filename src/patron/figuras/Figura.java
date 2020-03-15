@@ -1,3 +1,4 @@
+package patron.figuras;
 
 /**
  * @author César Augusto Gómez

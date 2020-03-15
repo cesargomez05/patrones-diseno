@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package patron.figuras;
 
 /**
  *
@@ -34,12 +30,13 @@ public class Rectangulo implements Figura {
 
     @Override
     public void calcularPerimetro() {
-        int resultado = 2 * base + 2 * altura;
-        System.out.println("Perímetro del rectángulo:");
+        int perimetro = 2 * base + 2 * altura;
+        System.out.println("Perímetro del rectángulo: " + perimetro);
     }
 
     @Override
     public void calcularArea() {
-
+        int area = base * altura;
+        System.out.println("Área del rectángulo: " + area);
     }
 }
