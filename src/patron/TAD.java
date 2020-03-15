@@ -2,7 +2,7 @@ package patron;
 
 /**
  *
- * @author César
+ * @author César Augusto Gómez
  */
 public interface TAD {
 
