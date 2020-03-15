@@ -23,12 +23,12 @@ public class Circulo implements Figura {
     }
 
     @Override
-    public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularPerimetro() {
+        return 2 * Math.PI * radio;
     }
 
     @Override
-    public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularArea() {
+        return Math.PI * Math.pow(radio, 2);
     }
 }
