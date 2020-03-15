@@ -7,10 +7,19 @@ package patron.elementos;
 public class ElementoPila extends Elemento {
 
     @Override
-    public void sacar() {
+    public void sacar() throws ElementoException {
         if (!estaVacia()) {
             int longitud = arrayList.size();
             arrayList.remove(longitud - 1);
         }
+    }
+
+    @Override
+    public int obtenerElemento() throws ElementoException {
+        if (!estaVacia()) {
+            int longitud = arrayList.size();
+            return arrayList.get(longitud - 1);
+        }
+        throw new ElementoException();
     }
 }
