@@ -35,12 +35,23 @@ public interface TAD {
     public void actualizar(int valor, int posicion);
 
     /**
-     * Método para bu
-     * @param valor 
+     * Método para buscar si existe un valor en la lista.
+     *
+     * @param valor Valor a buscar.
      */
     public void buscarValor(int valor);
 
+    /**
+     * Método para eliminar elementos por valor de la lista.
+     *
+     * @param valor Valor a eliminar.
+     */
     public void eliminarPorValor(int valor);
 
+    /**
+     * Método para eliminar el elemento ubicado en la posición.
+     *
+     * @param posicion Posición a eliminar.
+     */
     public void eliminarPorPosicion(int posicion);
 }
