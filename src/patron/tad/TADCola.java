@@ -4,7 +4,7 @@ import patron.elementos.ElementoCola;
 
 /**
  *
- * @author César
+ * @author César Augusto Gómez.
  */
 public class TADCola implements TAD {
 

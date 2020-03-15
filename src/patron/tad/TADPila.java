@@ -4,7 +4,7 @@ import patron.elementos.ElementoPila;
 
 /**
  *
- * @author César Augusto Gómez
+ * @author César Augusto Gómez.
  */
 public class TADPila implements TAD {
 
