@@ -21,23 +21,40 @@ public class Cola implements TAD {
 
     @Override
     public void insertar(int valor) {
-        // Se inserta el valor en la fila
+        System.out.println("Insertando: " + valor);
         arrayCola.add(valor);
     }
 
     @Override
     public void insertarEnPosicion(int valor, int posicion) {
+        System.out.println("Insertando: " + valor + " en la posición " + posicion);
 
+        if (estaVacia()) {
+            insertar(valor);
+        } else {
+            
+        }
     }
 
     @Override
     public void listarValores() {
+        int longitud = obtenerLongitud();
 
+        if (longitud == 0) {
+            System.out.println("No hay elementos en la lista");
+        } else {
+            System.out.println("Imprimiendo valores");
+        }
     }
 
     @Override
     public int obtenerLongitud() {
         return arrayCola.size();
+    }
+
+    @Override
+    public boolean estaVacia() {
+        return obtenerLongitud() > 0;
     }
 
     @Override

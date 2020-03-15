@@ -21,28 +21,45 @@ public class Pila implements TAD {
 
     @Override
     public void insertar(int valor) {
-        // Se inserta el valor en la fila
+        System.out.println("Insertando: " + valor);
         arrayPila.add(valor);
     }
 
     @Override
     public void insertarEnPosicion(int valor, int posicion) {
+        System.out.println("Insertando: " + valor + " en la posición " + posicion);
 
+        if (estaVacia()) {
+            insertar(valor);
+        } else {
+            
+        }
     }
 
     @Override
     public void listarValores() {
+        int longitud = obtenerLongitud();
 
+        if (longitud == 0) {
+            System.out.println("No hay elementos en la lista");
+        } else {
+            System.out.println("Imprimiendo valores");
+        }
     }
-    
+
     @Override
     public int obtenerLongitud() {
         return arrayPila.size();
     }
 
     @Override
-    public void actualizar(int valor, int posicion) {
+    public boolean estaVacia() {
+        return obtenerLongitud() > 0;
+    }
 
+    @Override
+    public void actualizar(int valor, int posicion) {
+        
     }
 
     @Override
@@ -52,11 +69,11 @@ public class Pila implements TAD {
 
     @Override
     public void eliminarPorValor(int valor) {
-
+        
     }
 
     @Override
     public void eliminarPorPosicion(int posicion) {
-
+        
     }
 }
