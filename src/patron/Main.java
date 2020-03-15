@@ -9,12 +9,12 @@ import java.util.Scanner;
  * @author César
  */
 public class Main {
-    
+
     public static void main(String[] args) {
         //TAD miTAD = new Pila();
         TAD miTAD = new Cola();
         Random rand = new Random();
-        
+
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
         int opcion, valor, posicion; //Guardaremos la opcion del usuario
@@ -28,13 +28,13 @@ public class Main {
                 + "6. Eliminar por valor\n"
                 + "7. Eliminar por posición\n"
                 + "0. Salir";
-        
+
         while (!salir) {
             System.out.println(message);
             try {
                 System.out.println("Escribe una de las opciones");
                 opcion = scanner.nextInt();
-                
+
                 switch (opcion) {
                     case 0:
                         salir = true;
