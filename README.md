@@ -7,4 +7,4 @@
 Implementación de un patron de diseño
 
 ## Descripción del ejercicio
-Para este ejercicio se emplea el patron de diseño AbstractFactory
+Para este ejercicio se hacer uso del patron de diseño AbstractFactory.
