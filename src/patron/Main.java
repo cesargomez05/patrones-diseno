@@ -10,6 +10,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        //TAD miTAD = new Pila();
+        TAD miTAD = new Cola();
+
+        /*
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
@@ -45,6 +49,6 @@ public class Main {
                 System.out.println("Debes insertar un número");
                 scanner.next();
             }
-        }
+        }*/
     }
 }
