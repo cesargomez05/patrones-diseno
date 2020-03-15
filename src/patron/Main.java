@@ -47,7 +47,7 @@ public class Main {
                     case 2:
                         System.out.println("Ingrese el valor a insertar");
                         valor = scannerValores.nextInt();
-                        System.out.println("Ingrese la posicion donde se insertará valor");
+                        System.out.println("Ingrese la posicion donde se insertará el valor");
                         posicion = scannerValores.nextInt();
                         miTAD.insertarEnPosicion(valor, posicion);
                         break;
@@ -55,32 +55,26 @@ public class Main {
                         miTAD.listarValores();
                         break;
                     case 4:
-                        
-                        
-                        /*if (miTAD.estaVacia()) {
-                            System.out.println("La lista no tiene elementos para actualizar");
-                        } else {
-                            valor = rand.nextInt(100);
-                            posicion = rand.nextInt(miTAD.obtenerLongitud());
-                            miTAD.actualizar(valor, posicion);
-                        }*/
+                        System.out.println("Ingrese el valor a actualizar");
+                        valor = scannerValores.nextInt();
+                        System.out.println("Ingrese la posicion donde se actualizará el valor");
+                        posicion = scannerValores.nextInt();
+                        miTAD.actualizar(valor, posicion);
                         break;
                     case 5:
-                        /*valor = rand.nextInt(100);
-                        miTAD.buscarValor(valor);*/
+                        System.out.println("Ingrese el valor a buscar");
+                        valor = scannerValores.nextInt();
+                        miTAD.buscarValor(valor);
                         break;
                     case 6:
-                        /*valor = rand.nextInt(100);
-                        miTAD.eliminarPorValor(valor);*/
+                        System.out.println("Ingrese el valor a eliminar");
+                        valor = scannerValores.nextInt();
+                        miTAD.eliminarPorValor(valor);
                         break;
                     case 7:
-                        /*
-                        if (miTAD.estaVacia()) {
-                            System.out.println("La lista no tiene elementos para eliminar");
-                        } else {
-                            posicion = rand.nextInt(miTAD.obtenerLongitud());
-                            miTAD.eliminarPorPosicion(posicion);
-                        }*/
+                        System.out.println("Ingrese la posicion del elemento a eliminar");
+                        posicion = scannerValores.nextInt();
+                        miTAD.eliminarPorPosicion(posicion);
                         break;
                     default:
                         System.out.println("La opción ingresada no es válida");

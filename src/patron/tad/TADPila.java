@@ -22,7 +22,7 @@ public class TADPila implements TAD {
 
     @Override
     public void insertarEnPosicion(int valor, int posicion) {
-        ElementoPila pilaApoyo = new ElementoPila();
+        //ElementoPila pilaApoyo = new ElementoPila();
 
         /*System.out.println("Insertando: " + valor + " en la posición " + posicion);
 
