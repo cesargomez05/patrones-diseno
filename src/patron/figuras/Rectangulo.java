@@ -29,14 +29,12 @@ public class Rectangulo implements Figura {
     }
 
     @Override
-    public void calcularPerimetro() {
-        int perimetro = 2 * base + 2 * altura;
-        System.out.println("Perímetro del rectángulo: " + perimetro);
+    public double calcularPerimetro() {
+        return 2 * base + 2 * altura;
     }
 
     @Override
-    public void calcularArea() {
-        int area = base * altura;
-        System.out.println("Área del rectángulo: " + area);
+    public double calcularArea() {
+        return base * altura;
     }
 }

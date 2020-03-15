@@ -23,12 +23,12 @@ public class Cuadrado implements Figura {
     }
 
     @Override
-    public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularPerimetro() {
+        return 4 * longitud;
     }
 
     @Override
-    public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularArea() {
+        return 2 * longitud;
     }
 }

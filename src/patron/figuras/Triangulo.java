@@ -23,12 +23,12 @@ public class Triangulo implements Figura {
     }
 
     @Override
-    public void calcularPerimetro() {
-        
+    public double calcularPerimetro() {
+        return 3 * longitud;
     }
 
     @Override
-    public void calcularArea() {
-        
+    public double calcularArea() {
+        return (Math.sqrt(3) * longitud) / 2;
     }
 }

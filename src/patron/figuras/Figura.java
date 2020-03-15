@@ -12,11 +12,13 @@ public interface Figura {
 
     /**
      * Función que calculará el perímetro de la figura
+     * @return Valor del perímetro
      */
-    public void calcularPerimetro();
+    public double calcularPerimetro();
 
     /**
      * Función que calculará el área de la figura
+     * @return Valor del área
      */
-    public void calcularArea();
+    public double calcularArea();
 }
