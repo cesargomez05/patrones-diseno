@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author César
+ * @author César Augusto Gómez.
  */
 public abstract class Elemento implements ElementoI {
 
