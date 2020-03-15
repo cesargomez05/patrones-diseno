@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package patron.elementos;
 
 /**
- *
- * @author César
+ * 
+ * @author César Augusto Gómez.
  */
-public interface Elemento {
+public interface ElementoTAD {
 
     /**
      * Método para insertar un elemento en el tipo de abstracción de dato.
