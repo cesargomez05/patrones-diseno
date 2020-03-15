@@ -4,11 +4,11 @@ package patron.figuras;
  *
  * @author César
  */
-public class Triangulo implements Figura {
+public class Cuadrado implements Figura {
 
     private int longitud;
 
-    public Triangulo(int longitud) {
+    public Cuadrado(int longitud) {
         this.setLongitud(longitud);
     }
 
@@ -18,17 +18,17 @@ public class Triangulo implements Figura {
 
     @Override
     public void mostrarDimensiones() {
-        System.out.println("Información del triángulo:");
+        System.out.println("Información del cuadrado:");
         System.out.println("Longitud: " + longitud);
     }
 
     @Override
     public void calcularPerimetro() {
-        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void calcularArea() {
-        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
