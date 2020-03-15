@@ -7,19 +7,18 @@ package patron.elementos;
 public class ElementoCola extends Elemento {
 
     @Override
-    public void sacar() throws Exception {
-        if (!estaVacia()) {
-            arrayList.remove(0);
-        } else {
-            throw new Exception("No hay elementos en la lista");
-        }
+    public void agregar(int valor) {
+        arrayList.add(valor);
+        numElementos++;
     }
 
     @Override
-    public int obtenerElemento() throws Exception {
+    public void sacar() throws Exception {
         if (!estaVacia()) {
-            return arrayList.get(0);
+            arrayList.remove(posicionPivote);
+            numElementos--;
+        } else {
+            throw new Exception("No hay elementos en la lista");
         }
-        throw new Exception("No hay elementos en la lista");
     }
 }

@@ -7,21 +7,24 @@ package patron.elementos;
 public class ElementoPila extends Elemento {
 
     @Override
-    public void sacar() throws Exception {
-        if (!estaVacia()) {
-            int longitud = arrayList.size();
-            arrayList.remove(longitud - 1);
-        } else {
-            throw new Exception("No hay elementos en la lista");
+    public void agregar(int valor) {
+        arrayList.add(valor);
+        numElementos++;
+        if (numElementos > 1) {
+            posicionPivote++;
         }
     }
 
     @Override
-    public int obtenerElemento() throws Exception {
+    public void sacar() throws Exception {
         if (!estaVacia()) {
-            int longitud = arrayList.size();
-            return arrayList.get(longitud - 1);
+            arrayList.remove(posicionPivote);
+            numElementos--;
+            if (posicionPivote > 0) {
+                posicionPivote--;
+            }
+        } else {
+            throw new Exception("No hay elementos en la lista");
         }
-        throw new Exception("No hay elementos en la lista");
     }
 }
