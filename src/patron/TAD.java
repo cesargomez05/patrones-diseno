@@ -28,9 +28,16 @@ public interface TAD {
 
     /**
      * Método para obtener la longitud de la lista de elementos.
+     *
      * @return N° de elementos actualmente insertados en la lista
      */
     public int obtenerLongitud();
+
+    /**
+     * Método para validar si la lista está vacía.
+     * @return Valor de verdad que indica si la lista se encuentra vacía
+     */
+    public boolean estaVacia();
 
     /**
      * Método para actualizar un valor de la lista.
