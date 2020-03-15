@@ -34,6 +34,11 @@ public class Pila implements TAD {
     public void listarValores() {
 
     }
+    
+    @Override
+    public int obtenerLongitud() {
+        return arrayPila.size();
+    }
 
     @Override
     public void actualizar(int valor, int posicion) {

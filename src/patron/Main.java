@@ -1,6 +1,7 @@
 package patron;
 
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -12,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         //TAD miTAD = new Pila();
         TAD miTAD = new Cola();
+        Random rand = new Random();
 
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
@@ -40,7 +42,7 @@ public class Main {
                         salir = true;
                         break;
                     case 1:
-
+                        miTAD.insertar(rand.nextInt(100));
                         break;
                     case 2:
 

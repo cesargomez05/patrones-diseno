@@ -36,6 +36,11 @@ public class Cola implements TAD {
     }
 
     @Override
+    public int obtenerLongitud() {
+        return arrayCola.size();
+    }
+
+    @Override
     public void actualizar(int valor, int posicion) {
 
     }

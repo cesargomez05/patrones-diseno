@@ -27,6 +27,12 @@ public interface TAD {
     public void listarValores();
 
     /**
+     * Método para obtener la longitud de la lista de elementos.
+     * @return N° de elementos actualmente insertados en la lista
+     */
+    public int obtenerLongitud();
+
+    /**
      * Método para actualizar un valor de la lista.
      *
      * @param valor Valor a actualizar.
