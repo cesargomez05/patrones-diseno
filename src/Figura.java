@@ -5,6 +5,11 @@
 public interface Figura {
 
     /**
+     * Función que muestra las dimensiones de la figura
+     */
+    public void mostrarDimensiones();
+
+    /**
      * Función que calculará el perímetro de la figura
      */
     public void calcularPerimetro();
