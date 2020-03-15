@@ -17,4 +17,17 @@ public interface ElementoTAD {
      * Método para sacar un elemento de la lista.
      */
     public void sacar();
+
+    /**
+     * Método para obtener la longitud de la lista.
+     *
+     * @return Longitud de la lista.
+     */
+    public int obtenerLongitud();
+
+    /**
+     * Método para validar si la lista se encuentra vacía.
+     * @return Valor de verdad que indica si la lista se encuentra vacía.
+     */
+    public boolean estaVacia();
 }

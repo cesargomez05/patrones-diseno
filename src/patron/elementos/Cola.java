@@ -21,9 +21,18 @@ public class Cola implements ElementoTAD {
 
     @Override
     public void sacar() {
-        int longitud = arrayCola.size();
-        if (longitud > 0) {
+        if (!estaVacia()) {
             arrayCola.remove(0);
         }
+    }
+
+    @Override
+    public int obtenerLongitud() {
+        return arrayCola.size();
+    }
+
+    @Override
+    public boolean estaVacia() {
+        return obtenerLongitud() > 0;
     }
 }

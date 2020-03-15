@@ -21,9 +21,19 @@ public class Pila implements ElementoTAD {
 
     @Override
     public void sacar() {
-        int longitud = arrayPila.size();
-        if (longitud > 0) {
+        int longitud = obtenerLongitud();
+        if (!estaVacia()) {
             arrayPila.remove(longitud - 1);
         }
+    }
+
+    @Override
+    public int obtenerLongitud() {
+        return arrayPila.size();
+    }
+
+    @Override
+    public boolean estaVacia() {
+        return obtenerLongitud() > 0;
     }
 }
