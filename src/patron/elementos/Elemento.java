@@ -6,7 +6,7 @@ import java.util.ArrayList;
  *
  * @author César Augusto Gómez.
  */
-public abstract class Elemento implements ElementoI {
+public abstract class Elemento {
 
     ArrayList<Integer> arrayList;
 
@@ -14,22 +14,18 @@ public abstract class Elemento implements ElementoI {
         arrayList = new ArrayList<>();
     }
 
-    @Override
     public void agregar(int valor) {
         arrayList.add(valor);
     }
 
-    @Override
     public void sacar() {
         // Se debe sobreescribir en cada una de las clases
     }
 
-    @Override
     public int obtenerLongitud() {
         return arrayList.size();
     }
 
-    @Override
     public boolean estaVacia() {
         return obtenerLongitud() > 0;
     }
