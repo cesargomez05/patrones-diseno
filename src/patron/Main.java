@@ -35,52 +35,53 @@ public class Main {
                 System.out.println("Escribe una de las opciones");
                 opcion = scanner.nextInt();
 
-                switch (opcion) {
-                    case 0:
-                        salir = true;
-                        break;
-                    case 1:
-                        System.out.println("Ingrese el valor a insertar");
-                        valor = scannerValores.nextInt();
-                        miTAD.insertar(valor);
-                        break;
-                    case 2:
-                        System.out.println("Ingrese el valor a insertar");
-                        valor = scannerValores.nextInt();
-                        System.out.println("Ingrese la posicion donde se insertará el valor");
-                        posicion = scannerValores.nextInt();
-                        miTAD.insertarEnPosicion(valor, posicion);
-                        break;
-                    case 3:
-                        miTAD.listarValores();
-                        break;
-                    case 4:
-                        System.out.println("Ingrese el valor a actualizar");
-                        valor = scannerValores.nextInt();
-                        System.out.println("Ingrese la posicion donde se actualizará el valor");
-                        posicion = scannerValores.nextInt();
-                        miTAD.actualizar(valor, posicion);
-                        break;
-                    case 5:
-                        System.out.println("Ingrese el valor a buscar");
-                        valor = scannerValores.nextInt();
-                        miTAD.buscarValor(valor);
-                        break;
-                    case 6:
-                        System.out.println("Ingrese el valor a eliminar");
-                        valor = scannerValores.nextInt();
-                        miTAD.eliminarPorValor(valor);
-                        break;
-                    case 7:
-                        System.out.println("Ingrese la posicion del elemento a eliminar");
-                        posicion = scannerValores.nextInt();
-                        miTAD.eliminarPorPosicion(posicion);
-                        break;
-                    default:
-                        System.out.println("La opción ingresada no es válida");
+                if (opcion == 0) {
+                    salir = true;
+                } else {
+                    switch (opcion) {
+                        case 1:
+                            System.out.println("Ingrese el valor a insertar");
+                            valor = scannerValores.nextInt();
+                            miTAD.insertar(valor);
+                            break;
+                        case 2:
+                            System.out.println("Ingrese el valor a insertar");
+                            valor = scannerValores.nextInt();
+                            System.out.println("Ingrese la posicion donde se insertará el valor");
+                            posicion = scannerValores.nextInt();
+                            miTAD.insertarEnPosicion(valor, posicion);
+                            break;
+                        case 3:
+                            miTAD.listarValores();
+                            break;
+                        case 4:
+                            System.out.println("Ingrese el valor a actualizar");
+                            valor = scannerValores.nextInt();
+                            System.out.println("Ingrese la posicion donde se actualizará el valor");
+                            posicion = scannerValores.nextInt();
+                            miTAD.actualizar(valor, posicion);
+                            break;
+                        case 5:
+                            System.out.println("Ingrese el valor a buscar");
+                            valor = scannerValores.nextInt();
+                            miTAD.buscarValor(valor);
+                            break;
+                        case 6:
+                            System.out.println("Ingrese el valor a eliminar");
+                            valor = scannerValores.nextInt();
+                            miTAD.eliminarPorValor(valor);
+                            break;
+                        case 7:
+                            System.out.println("Ingrese la posicion del elemento a eliminar");
+                            posicion = scannerValores.nextInt();
+                            miTAD.eliminarPorPosicion(posicion);
+                            break;
+                        default:
+                            System.out.println("La opción ingresada no es válida");
+                    }
+                    System.out.println("Presiona cualquier tecla para continuar");
+                    System.in.read();
                 }
-                System.out.println("Haga clic en");
-                System.in.read();
             } catch (InputMismatchException e) {
                 System.out.println("Debes insertar un número");
                 scanner.next();
