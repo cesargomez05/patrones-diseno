@@ -1,7 +1,7 @@
 package patron;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
-import patron.figuras.Figura;
 
 /**
  *
@@ -10,14 +10,41 @@ import patron.figuras.Figura;
 public class Main {
 
     public static void main(String[] args) {
-        int opcion = 0;
-        Figura miFigura;
+        Scanner scanner = new Scanner(System.in);
+        boolean salir = false;
+        int opcion; //Guardaremos la opcion del usuario
 
-        Scanner escaner = new Scanner(System.in);
-        /*do {
-            System.out.println("Ingrese un numero entre 0 y " + maxOpc
-                    + " para ver un ejemplo de patrones");
-            opcion = sc.nextInt();
-        } while (opcion < 0 || opcion > maxOpc);*/
+        while (!salir) {
+
+            System.out.println("1. Opcion 1");
+            System.out.println("2. Opcion 2");
+            System.out.println("3. Opcion 3");
+            System.out.println("4. Salir");
+
+            try {
+                System.out.println("Escribe una de las opciones");
+                opcion = scanner.nextInt();
+
+                switch (opcion) {
+                    case 1:
+                        System.out.println("Has seleccionado la opcion 1");
+                        break;
+                    case 2:
+                        System.out.println("Has seleccionado la opcion 2");
+                        break;
+                    case 3:
+                        System.out.println("Has seleccionado la opcion 3");
+                        break;
+                    case 4:
+                        salir = true;
+                        break;
+                    default:
+                        System.out.println("Solo números entre 1 y 4");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Debes insertar un número");
+                scanner.next();
+            }
+        }
     }
 }

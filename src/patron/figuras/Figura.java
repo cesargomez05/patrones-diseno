@@ -5,6 +5,8 @@ package patron.figuras;
  */
 public interface Figura {
 
+    public void solicitarInformacion();
+    
     /**
      * Función que muestra las dimensiones de la figura
      */

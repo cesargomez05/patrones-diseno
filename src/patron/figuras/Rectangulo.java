@@ -8,9 +8,7 @@ public class Rectangulo implements Figura {
 
     private int base, altura;
 
-    public Rectangulo(int base, int altura) {
-        this.setBase(base);
-        this.setAltura(altura);
+    public Rectangulo() {
     }
 
     public void setBase(int base) {
@@ -19,6 +17,11 @@ public class Rectangulo implements Figura {
 
     public void setAltura(int altura) {
         this.altura = altura;
+    }
+
+    @Override
+    public void solicitarInformacion() {
+
     }
 
     @Override

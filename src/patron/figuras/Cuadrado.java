@@ -8,12 +8,16 @@ public class Cuadrado implements Figura {
 
     private int longitud;
 
-    public Cuadrado(int longitud) {
-        this.setLongitud(longitud);
+    public Cuadrado() {
     }
 
     public void setLongitud(int longitud) {
         this.longitud = longitud;
+    }
+
+    @Override
+    public void solicitarInformacion() {
+
     }
 
     @Override

@@ -8,8 +8,7 @@ public class Circulo implements Figura {
 
     private int radio;
 
-    public Circulo(int radio) {
-        this.setRadio(radio);
+    public Circulo() {
     }
 
     public void setRadio(int radio) {
@@ -22,6 +21,11 @@ public class Circulo implements Figura {
         System.out.println("Radio: " + radio);
     }
 
+    @Override
+    public void solicitarInformacion() {
+        
+    }
+    
     @Override
     public double calcularPerimetro() {
         return 2 * Math.PI * radio;
