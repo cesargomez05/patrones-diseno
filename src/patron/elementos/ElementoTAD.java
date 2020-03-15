@@ -1,33 +1,36 @@
 package patron.elementos;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author César Augusto Gómez.
+ * @author César
  */
-public interface ElementoTAD {
+public abstract class ElementoTAD implements TAD {
 
-    /**
-     * Método para insertar un elemento en el tipo de abstracción de dato.
-     *
-     * @param valor Valor a insertar.
-     */
-    public void agregar(int valor);
+    ArrayList<Integer> arrayList;
 
-    /**
-     * Método para sacar un elemento de la lista.
-     */
-    public void sacar();
+    public ElementoTAD() {
+        arrayList = new ArrayList<>();
+    }
 
-    /**
-     * Método para obtener la longitud de la lista.
-     *
-     * @return Longitud de la lista.
-     */
-    public int obtenerLongitud();
+    @Override
+    public void agregar(int valor) {
+        arrayList.add(valor);
+    }
 
-    /**
-     * Método para validar si la lista se encuentra vacía.
-     * @return Valor de verdad que indica si la lista se encuentra vacía.
-     */
-    public boolean estaVacia();
+    @Override
+    public void sacar() {
+        
+    }
+
+    @Override
+    public int obtenerLongitud() {
+        return arrayList.size();
+    }
+
+    @Override
+    public boolean estaVacia() {
+        return obtenerLongitud() > 0;
+    }
 }
