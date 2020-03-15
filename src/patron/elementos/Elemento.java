@@ -27,16 +27,16 @@ public abstract class Elemento {
      * Método para obtener el elemento accesible de la lista.
      *
      * @return Elemento visible de la lista.
-     * @throws patron.elementos.ElementoException
+     * @throws java.lang.Exception
      */
-    public abstract int obtenerElemento() throws ElementoException;
+    public abstract int obtenerElemento() throws Exception;
 
     /**
      * Método para sacar el elemento de la lista.
      *
-     * @throws ElementoException
+     * @throws java.lang.Exception
      */
-    public abstract void sacar() throws ElementoException;
+    public abstract void sacar() throws Exception;
 
     /**
      * Método que permite validar si la lista se encuentra vacía.
